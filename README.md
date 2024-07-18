@@ -7,7 +7,7 @@ This is the aim of hyperspectral fusion.
 
 With HIFReD, we have implemented an algorithm that jointly deconvolves the spatial response of XRISM and the spectral response of XMM-Newton. To do so, we have constructed a forward model adapted for instrumental systematic degradations and Poisson noise, which is shown in this diagram: 
 
-<img width="994" alt="image" src="https://github.com/user-attachments/assets/9bacc0cc-4f62-4e73-b367-7c6669ef886e">
+<img width="1206" alt="image" src="https://github.com/user-attachments/assets/1cf6b23d-8a4d-42b4-b85f-7a4d863c91d2">
 
 We tackle hyperspectral fusion as a regularized inverse problem. Let $X$ be the data set with better spatial resolution (e.g. XMM-Newton) and $Y$ the data set with better spectral resolution (e.g. XRISM). Let $\hat{Z}$ be the superresolute cube we are looking for. The equation we seek to minimize is then: 
 <p>

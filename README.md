@@ -11,11 +11,11 @@ With HIFReD, we have implemented an algorithm that jointly deconvolves the spati
 
 We tackle hyperspectral fusion as a regularized inverse problem. Let $X$ be the data set with better spatial resolution (e.g. XMM-Newton) and $Y$ the data set with better spectral resolution (e.g. XRISM). Let $\hat{Z}$ be the superresolute cube we are looking for. The equation we seek to minimize is then: 
 <p>
-$$
-\hat{Z}= \text{argmin}_{Z\geq 0} \mathcal{L}_P\Big(X \;| \;Z_X\Big)+\mathcal{L}_P\Big(Y \;| \;Z_Y\Big) + \varphi(Z),
-$$
+$\hat{Z}= \text{argmin}_{Z\geq 0} \mathcal{L}_P\Big(X \;| \;Z_X\Big)+\mathcal{L}_P\Big(Y \;| \;Z_Y\Big) + \varphi(Z),$
 </p>
+
 where $\mathcal{L}_P$ is the negative Poisson log-likelihood, $\varphi$ is the regularisation term, and:
+
 <p>
 $Z_X=(t_{X} Z\odot A_{X})\mathcal{S}_{X} \mathcal{R}_L $
 </p><p>
